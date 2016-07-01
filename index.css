@@ -24,8 +24,19 @@ font-family: 'Snowburst One', cursive;
     border:5px solid #555;
   }
 
+  td:hover {
+    width: 100px;
+    height: 100px;
+    color: rgba(24, 48, 134, 0.59);
+  }
+
   button {
     width: 100px;
     height: 100px;
     font-size: 30px;
+    /*background-color: #000000;*/
+  }
+
+  button:hover {
+    background-color: rgba(24, 48, 134, 0.59);
   }
