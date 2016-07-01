@@ -39,4 +39,45 @@ font-family: 'Snowburst One', cursive;
 
   button:hover {
     background-color: rgba(24, 48, 134, 0.59);
+    box-shadow: 0 0 3rem rgb(253, 254, 0)
+  }
+
+  .mulder {
+    background-image: url("media/mulder.png");
+    background-repeat: no-repeat;
+  }
+
+  .scully {
+    background-image: url("media/scully.png");
+    background-repeat: no-repeat;
+  }
+
+  #mulder {
+    float: left;
+    margin-left: 200px;
+  }
+
+
+  #scully {
+    float: right;
+    margin-right: 200px;
+  }
+
+
+  #spaceship {
+    float: left;
+    margin-left: 100px;
+    /*margin-bottom: 500px;*/
+  }
+
+  #spaceship:hover {
+    transform: rotate3d(1, 2.0, 3.0, 25deg);
+  }
+
+  #tic-tac-toe {
+    margin-right: 300px;
+  }
+
+  h1 {
+    margin-right: 300px;
   }
