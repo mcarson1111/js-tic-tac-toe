@@ -4,6 +4,15 @@
 //   this.symbol = sym;
 // }
 
+
+
+//want to make it responsive
+//need to make it so you cant cheat
+//want to keep score tally
+//make reset and new game buttons
+  //reset resets board, new game resets scores
+
+
 function TicTacToe() {
   this.player_one = 'mulder'
   this.player_two = 'scully'
@@ -70,21 +79,21 @@ this.checkIfWon = function(board, player) {
   console.log(player)
   console.log(board)
   var won = false
-  if(board.find("1").hasClass(player) && board.find("#2").hasClass(player) && board.find("#3").hasClass(player)) {
+  if(board.find("1").hasClass(player) && board.find("2").hasClass(player) && board.find("3").hasClass(player)) {
     won = true
-  } else if (board.find("#1").hasClass(player) && board.find("#4").hasClass(player) && board.find("#7").hasClass(player)) {
+  } else if (board.find("1").hasClass(player) && board.find("4").hasClass(player) && board.find("7").hasClass(player)) {
     won = true
-  } else if (board.find("#1").hasClass(player) && board.find("#5").hasClass(player) && board.find("#9").hasClass(player)) {
+  } else if (board.find("1").hasClass(player) && board.find("5").hasClass(player) && board.find("9").hasClass(player)) {
     won = true
-  } else if (board.find("#4").hasClass(player) && board.find("#5").hasClass(player) && board.find("#6").hasClass(player)) {
+  } else if (board.find("4").hasClass(player) && board.find("5").hasClass(player) && board.find("6").hasClass(player)) {
     won = true
-  } else if (board.find("#7").hasClass(player) && board.find("#8").hasClass(player) && board.find("#9").hasClass(player)) {
+  } else if (board.find("7").hasClass(player) && board.find("8").hasClass(player) && board.find("9").hasClass(player)) {
     won = true
-  } else if (board.find("#2").hasClass(player) && board.find("#5").hasClass(player) && board.find("#8").hasClass(player)) {
+  } else if (board.find("2").hasClass(player) && board.find("5").hasClass(player) && board.find("8").hasClass(player)) {
     won = true
-  } else if (board.find("#3").hasClass(player) && board.find("#6").hasClass(player) && board.find("#9").hasClass(player)) {
+  } else if (board.find("3").hasClass(player) && board.find("6").hasClass(player) && board.find("9").hasClass(player)) {
     won = true
-  } else if (board.find("#3").hasClass(player) && board.find("#5").hasClass(player) && board.find("#7").hasClass(player)) {
+  } else if (board.find("3").hasClass(player) && board.find("5").hasClass(player) && board.find("7").hasClass(player)) {
     won = true
   }
   return won;
@@ -92,9 +101,9 @@ this.checkIfWon = function(board, player) {
 
 this.checkIfDraw = function(board) {
    var draw = false
-   if(board.find('#1').is(".mulder,.scully") && board.find('#2').is(".mulder,.scully") && board.find('#3').is(".mulder,.scully")) {
-     if(board.find('#4').is(".mulder,.scully") && board.find('#5').is(".mulder,.scully") && board.find('#6').is(".mulder,.scully")) {
-       if(board.find('#7').is(".mulder,.scully") && board.find('#8').is(".mulder,.scully") && board.find('#9').is(".mulder,.scully")) {
+   if(board.find('1').is(".mulder,.scully") && board.find('2').is(".mulder,.scully") && board.find('3').is(".mulder,.scully")) {
+     if(board.find('4').is(".mulder,.scully") && board.find('5').is(".mulder,.scully") && board.find('6').is(".mulder,.scully")) {
+       if(board.find('7').is(".mulder,.scully") && board.find('8').is(".mulder,.scully") && board.find('9').is(".mulder,.scully")) {
          var draw = true
        }
      }
